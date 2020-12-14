@@ -16,13 +16,24 @@ import java.util.Objects;
 public class SSCBangla1stActivity extends AppCompatActivity {
     private final String[] links = {
             "https://google.com",
+            "https://google.com",
+            "https://google.com",
+            "https://google.com",
+            "https://google.com",
     };
 
     private final String[] names = {
             "Int Aff",
+            "Int Aff",
+            "Int Aff",
+            "Int Aff",
     };
 
     private final int[] image = {
+            R.drawable.ssc_exam,
+            R.drawable.ssc_exam,
+            R.drawable.ssc_exam,
+            R.drawable.ssc_exam,
             R.drawable.ssc_exam,
     };
 
