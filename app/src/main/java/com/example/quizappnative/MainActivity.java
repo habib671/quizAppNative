@@ -1,38 +1,177 @@
 package com.example.quizappnative;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.res.ResourcesCompat;
-
 import android.content.Intent;
-import android.graphics.Typeface;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
+import com.example.quizappnative.quizActivities.QuizCategoryActivity;
+import com.example.quizappnative.readingMaterials.BooksBDStudyActivity;
+import com.example.quizappnative.readingMaterials.BooksBanglaActivity;
+import com.example.quizappnative.readingMaterials.BooksEnglishActivity;
+import com.example.quizappnative.readingMaterials.BooksIntAffairActivity;
+import com.example.quizappnative.readingMaterials.BooksMathsActivity;
+import com.example.quizappnative.readingMaterials.BooksEngLiterActivity;
+import com.example.quizappnative.sscQuestions.SSCMainActivity;
 
 public class MainActivity extends AppCompatActivity {
-
-    private TextView textViewTitle;
-    private Button startButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        textViewTitle = findViewById(R.id.mainTitle);
-        startButton = findViewById(R.id.ma_start_button);
-
-        Typeface typeface = ResourcesCompat.getFont(this,R.font.blacklist);
-        textViewTitle.setTypeface(typeface);
-
-        startButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new  Intent(MainActivity.this,Category_Activity.class);
-                startActivity(intent);
-            }
-        });
-
+        //Setting custom Toolbar
+        Toolbar toolbar = findViewById(R.id.toolbar_main_activity);
+        toolbar.setTitle(R.string.app_name);
+        setSupportActionBar(toolbar);
     }
+
+    //Setting menu for Actionbar
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.home_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == R.id.action_search) {
+            openSearch();
+            return true;
+        } else {
+            return super.onOptionsItemSelected(item);
+        }
+    }
+
+    //Launching other activities
+    private void openSearch() {
+        Intent intent = new Intent(MainActivity.this, SearchActivity.class);
+        startActivity(intent);
+    }
+
+    public void openQuiz(View view) {
+        Intent intent = new Intent(MainActivity.this, QuizCategoryActivity.class);
+        startActivity(intent);
+    }
+
+    public void openSSCQuestions(View view) {
+        Intent intent = new Intent(MainActivity.this, SSCMainActivity.class);
+        startActivity(intent);
+    }
+
+    public void openHSCQuestions(View view) {
+        //Intent intent = new Intent(MainActivity.this, SearchActivity.class);
+        //startActivity(intent);
+    }
+
+    public void openAdmissionQuestions(View view) {
+        //Intent intent = new Intent(MainActivity.this, SearchActivity.class);
+        //startActivity(intent);
+    }
+
+
+    public void openBCSQuestions(View view) {
+        //Intent intent = new Intent(MainActivity.this, SearchActivity.class);
+        //startActivity(intent);
+    }
+
+    public void openBanksQuestions(View view) {
+        //Intent intent = new Intent(MainActivity.this, JobsBankQuesActivity.class);
+        //startActivity(intent);
+    }
+
+    public void openGovtJobsQuestions(View view) {
+        //Intent intent = new Intent(MainActivity.this, JobsGovtQuesActivity.class);
+        //startActivity(intent);
+    }
+
+    public void openCSEJobsQuestions(View view) {
+        //Intent intent = new Intent(MainActivity.this, JobsCSEQuesActivity.class);
+        //startActivity(intent);
+    }
+
+    public void openEEEJobsQuestions(View view) {
+        //Intent intent = new Intent(MainActivity.this, JobsEEEQuesActivity.class);
+        //startActivity(intent);
+    }
+
+    public void openBengaliBooks(View view) {
+        Intent intent = new Intent(MainActivity.this, BooksBanglaActivity.class);
+        startActivity(intent);
+    }
+
+    public void openEnglishBooks(View view) {
+        Intent intent = new Intent(MainActivity.this, BooksEnglishActivity.class);
+        startActivity(intent);
+    }
+
+    public void openMathBooks(View view) {
+        Intent intent = new Intent(MainActivity.this, BooksMathsActivity.class);
+        startActivity(intent);
+    }
+
+    public void openBDBooks(View view) {
+        Intent intent = new Intent(MainActivity.this, BooksBDStudyActivity.class);
+        startActivity(intent);
+    }
+
+    public void openEngLiteratureBooks(View view) {
+        Intent intent = new Intent(MainActivity.this, BooksEngLiterActivity.class);
+        startActivity(intent);
+    }
+
+    public void openIntAffairsBooks(View view) {
+        Intent intent = new Intent(MainActivity.this, BooksIntAffairActivity.class);
+        startActivity(intent);
+    }
+
+    public void openGenKnwBooks(View view) {
+        //Intent intent = new Intent(MainActivity.this, GKBooksActivity.class);
+        //startActivity(intent);
+    }
+
+    public void openGeographyBooks(View view) {
+        //Intent intent = new Intent(MainActivity.this, GeoBooksActivity.class);
+        //startActivity(intent);
+    }
+
+    public void openNoitikotaBooks(View view) {
+        //Intent intent = new Intent(MainActivity.this, NoitikotaBooksActivity.class);
+        //startActivity(intent);
+    }
+
+    public void openMentalAbilityBooks(View view) {
+        //Intent intent = new Intent(MainActivity.this, MetalAbilityBooksActivity.class);
+        //startActivity(intent);
+    }
+
+    public void openComputerITBooks(View view) {
+        //Intent intent = new Intent(MainActivity.this, ComputerITBooksctivity.class);
+        //startActivity(intent);
+    }
+
+    public void openBoardBooks(View view) {
+        //Intent intent = new Intent(MainActivity.this, BoardBooksctivity.class);
+        //startActivity(intent);
+    }
+
+    public void openLargeBooks(View view) {
+        //Intent intent = new Intent(MainActivity.this, LargeBooksActivity.class);
+        //startActivity(intent);
+    }
+
+    public void openMixedBooks(View view) {
+        //Intent intent = new Intent(MainActivity.this, MixedBooksctivity.class);
+        //startActivity(intent);
+    }
+    //Launching other activities
+
 }

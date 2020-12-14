@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".sscQuestions.SSCMainActivity">
+
+    <include
+        android:id="@+id/ssc_all_toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:onClick="openSSCAccounting"
+                style="@style/ListLayoutStyle">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/ssc_exam" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/accounting" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:onClick="openSSCAgriculture"
+                style="@style/ListLayoutStyle">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/ssc_exam" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/agriculture" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:onClick="openSSCBangla1st"
+                style="@style/ListLayoutStyle">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/ssc_exam" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/bangla_1st_paper" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:onClick="openSSCBangla2nd"
+                style="@style/ListLayoutStyle">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/ssc_exam" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/bangla_2nd_paper" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:onClick="openSSCBissoPrichoy"
+                style="@style/ListLayoutStyle">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/ssc_exam" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/bangladesh_and_world_view" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:onClick="openSSCBiology"
+                style="@style/ListLayoutStyle">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/ssc_exam" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/biology" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:onClick="openSSCBussinessInit"
+                style="@style/ListLayoutStyle">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/ssc_exam" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/business_initiative" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:onClick="openSSCChemistry"
+                style="@style/ListLayoutStyle">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/ssc_exam" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/chemistry" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:onClick="openSSCCivics"
+                style="@style/ListLayoutStyle">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/ssc_exam" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/civics" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:onClick="openSSCEconomics"
+                style="@style/ListLayoutStyle">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/ssc_exam" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/economics" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:onClick="openSSCEnglish1st"
+                style="@style/ListLayoutStyle">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/ssc_exam" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/english_1st_paper" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:onClick="openSSCEnglish2nd"
+                style="@style/ListLayoutStyle">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/ssc_exam" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/english_2nd_paper" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:onClick="openSSCFinanceBanking"
+                style="@style/ListLayoutStyle">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/ssc_exam" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/finance_and_banking" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:onClick="openSSCGeography"
+                style="@style/ListLayoutStyle">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/ssc_exam" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/geography_and_environment" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:onClick="openSSCHigherMath"
+                style="@style/ListLayoutStyle">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/ssc_exam" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/higher_math" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:onClick="openSSCgMath"
+                style="@style/ListLayoutStyle">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/ssc_exam" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/general_math" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:onClick="openSSCPhysics"
+                style="@style/ListLayoutStyle">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/ssc_exam" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/physics" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:onClick="openSSCHomeScience"
+                style="@style/ListLayoutStyle">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/ssc_exam" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/home_science" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:onClick="openSSCIslam"
+                style="@style/ListLayoutStyle">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/ssc_exam" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/islam_and_moral_education" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:onClick="openSSCgScience"
+                style="@style/ListLayoutStyle">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/ssc_exam" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/science" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:onClick="openSSCict"
+                style="@style/ListLayoutStyle">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/ssc_exam" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/ict" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:onClick="openSSCHindu"
+                style="@style/ListLayoutStyle">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/ssc_exam" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/hindu_religion" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

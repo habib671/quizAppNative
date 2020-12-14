@@ -1,10 +1,130 @@
 <resources>
-    <!-- Base application theme. -->
+
+    <!-- Default - Light Green theme -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="colorPrimary">#43A047</item>
+        <item name="colorPrimaryDark">#336644</item>
+        <item name="colorPrimaryVariant">#00C853</item>
+        <item name="colorPrimarySurface">#A5D6A7</item>
+        <item name="colorSecondary">#C0CA33</item>
+        <item name="colorSecondaryVariant">#AEEA00</item>
+        <item name="colorAccent">#2979FF</item>
+        <item name="iconTint">#BF000000</item>
+        <item name="colorOnBackground">#12FFFFFF</item>
+
+    </style>
+
+    <!-- Optional - Dark Red theme -->
+    <style name="AppThemeDarkPink" parent="Theme.AppCompat.NoActionBar">
+
+        <item name="colorPrimary">#D81B60</item>
+        <item name="colorPrimaryDark">#662244</item>
+        <item name="colorPrimaryVariant">#F50057</item>
+        <item name="colorPrimarySurface">#880E4F</item>
+        <item name="colorSecondary">#8E24AA</item>
+        <item name="colorSecondaryVariant">#D500F9</item>
+        <item name="colorAccent">#FFC400</item>
+        <item name="iconTint">#BFFFFFFF</item>
+        <item name="colorOnBackground">#12000000</item>
+
+    </style>
+
+    <!--Text Style for Section Header-->
+    <style name="TextSectionHeader">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?attr/colorAccent</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <!--Edit Text Style with Stroke Border-->
+    <style name="EditTextBordered" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/outline_background</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <!--Radio Button Style for Theme Chooser-->
+    <style name="RadioButtonThemeChooser" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">128dp</item>
+        <item name="android:minHeight">72dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:buttonTint">#FFF</item>
+    </style>
+
+    <!--Horizontal ScrollView Child Size-->
+    <style name="HorizontalScrollViewChildSize">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+    </style>
+
+    <!--Home Cards Style-->
+    <style name="HomeCardStyle">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <!--Home Cards Image style-->
+    <style name="HomeCardImageStyle">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">120dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <!--Home Cards Text style-->
+    <style name="HomeCardTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?android:attr/textColorPrimaryNoDisable</item>
+    </style>
+
+    <!--List layout style-->
+    <style name="ListLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">#40808080</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingBottom">1dp</item>
+    </style>
+
+    <!--List image style-->
+    <style name="ListImageStyle">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:background">?android:attr/colorBackground</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <!--List text style-->
+    <style name="ListTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:background">?android:attr/colorBackground</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">?android:attr/textColorPrimaryNoDisable</item>
+        <item name="android:textSize">20sp</item>
     </style>
 
 </resources>

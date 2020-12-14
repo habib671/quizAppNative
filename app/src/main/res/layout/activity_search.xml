@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+
+    <include
+        android:id="@+id/toolbar_search_screen"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/search_field"
+        android:layout_below="@id/toolbar_search_screen"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/search" />
+
+    <LinearLayout
+        android:id="@+id/search_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/search_input"
+            style="@style/EditTextBordered"
+            android:layout_width="0dp"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:hint="@string/search"
+            android:importantForAutofill="no"
+            android:inputType="textNoSuggestions" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/image_view"
+            android:onClick="searchQuestions"
+            android:src="@drawable/ic_search" />
+
+    </LinearLayout>
+</RelativeLayout>

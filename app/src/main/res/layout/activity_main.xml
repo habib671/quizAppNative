@@ -1,53 +1,410 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/main_background"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.452"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.211"
-        app:srcCompat="@drawable/logo" />
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/mainTitle"
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_main_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimarySurface"
+            app:layout_scrollFlags="scroll|snap" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimarySurface"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            app:layout_scrollFlags="scroll|snap">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="@string/test_your_knowledge_by_taking_quiz" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/outline_background"
+                android:drawableEnd="@drawable/ic_arrow_right"
+                android:onClick="openQuiz"
+                android:paddingVertical="8dp"
+                android:paddingStart="8dp"
+                android:text="@string/take_quiz"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="16sp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:text="My Quiz"
-        android:gravity="center"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:textColor="@android:color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.458"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
-    <Button
-        android:id="@+id/ma_start_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="64dp"
-        android:text="Start"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:textColor="@color/colorAccent"
-        android:background="@drawable/round_corner"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextSectionHeader"
+                android:text="@string/school_college_questions" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.LinearLayoutCompat style="@style/HorizontalScrollViewChildSize">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        style="@style/HomeCardStyle"
+                        android:onClick="openSSCQuestions">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            style="@style/HomeCardImageStyle"
+                            android:src="@drawable/ssc_exam" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/HomeCardTextStyle"
+                            android:text="@string/ssc" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:onClick="openHSCQuestions"
+                        style="@style/HomeCardStyle">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            style="@style/HomeCardImageStyle"
+                            android:src="@drawable/hsc_exam" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/HomeCardTextStyle"
+                            android:text="@string/hsc" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:onClick="openAdmissionQuestions"
+                        style="@style/HomeCardStyle">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            style="@style/HomeCardImageStyle"
+                            android:src="@drawable/admission_exam" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/HomeCardTextStyle"
+                            android:text="@string/admission" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </HorizontalScrollView>
+
+            <TextView
+                style="@style/TextSectionHeader"
+                android:text="@string/bcs_job_questions" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.LinearLayoutCompat style="@style/HorizontalScrollViewChildSize">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:onClick="openBCSQuestions"
+                        style="@style/HomeCardStyle">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            style="@style/HomeCardImageStyle"
+                            android:src="@drawable/office_meeting" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/HomeCardTextStyle"
+                            android:text="@string/bcs" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:onClick="openBanksQuestions"
+                        style="@style/HomeCardStyle">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            style="@style/HomeCardImageStyle"
+                            android:src="@drawable/bangladesh_bank" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/HomeCardTextStyle"
+                            android:text="@string/banks" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:onClick="openGovtJobsQuestions"
+                        style="@style/HomeCardStyle">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            style="@style/HomeCardImageStyle"
+                            android:src="@drawable/supreme_court" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/HomeCardTextStyle"
+                            android:text="@string/government" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:onClick="openCSEJobsQuestions"
+                        style="@style/HomeCardStyle">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            style="@style/HomeCardImageStyle"
+                            android:src="@drawable/processor_chip" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/HomeCardTextStyle"
+                            android:text="@string/cse_it" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:onClick="openEEEJobsQuestions"
+                        style="@style/HomeCardStyle">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            style="@style/HomeCardImageStyle"
+                            android:src="@drawable/electronics" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/HomeCardTextStyle"
+                            android:text="@string/electronics" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </HorizontalScrollView>
+
+            <TextView
+                style="@style/TextSectionHeader"
+                android:text="@string/reading_materials" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.LinearLayoutCompat style="@style/HorizontalScrollViewChildSize">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        style="@style/HomeCardStyle"
+                        android:onClick="openBengaliBooks">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            style="@style/HomeCardImageStyle"
+                            android:src="@drawable/flat" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/HomeCardTextStyle"
+                            android:text="@string/bengali_books" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        style="@style/HomeCardStyle"
+                        android:onClick="openEnglishBooks">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            style="@style/HomeCardImageStyle"
+                            android:src="@drawable/flat" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/HomeCardTextStyle"
+                            android:text="@string/english_books" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        style="@style/HomeCardStyle"
+                        android:onClick="openMathBooks">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            style="@style/HomeCardImageStyle"
+                            android:src="@drawable/flat" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/HomeCardTextStyle"
+                            android:text="@string/math_books" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        style="@style/HomeCardStyle"
+                        android:onClick="openBDBooks">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            style="@style/HomeCardImageStyle"
+                            android:src="@drawable/flat" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/HomeCardTextStyle"
+                            android:text="@string/bd_study_books" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        style="@style/HomeCardStyle"
+                        android:onClick="openEngLiteratureBooks">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            style="@style/HomeCardImageStyle"
+                            android:src="@drawable/flat" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/HomeCardTextStyle"
+                            android:text="@string/english_literature_books" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        style="@style/HomeCardStyle"
+                        android:onClick="openIntAffairsBooks">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            style="@style/HomeCardImageStyle"
+                            android:src="@drawable/flat" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/HomeCardTextStyle"
+                            android:text="@string/international_affair_books" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:onClick="openGenKnwBooks"
+                        style="@style/HomeCardStyle">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            style="@style/HomeCardImageStyle"
+                            android:src="@drawable/flat" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/HomeCardTextStyle"
+                            android:text="@string/general_knowledge_books" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:onClick="openGeographyBooks"
+                        style="@style/HomeCardStyle">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            style="@style/HomeCardImageStyle"
+                            android:src="@drawable/flat" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/HomeCardTextStyle"
+                            android:text="@string/geography_books" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:onClick="openNoitikotaBooks"
+                        style="@style/HomeCardStyle">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            style="@style/HomeCardImageStyle"
+                            android:src="@drawable/flat" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/HomeCardTextStyle"
+                            android:text="@string/ethics_books" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:onClick="openMentalAbilityBooks"
+                        style="@style/HomeCardStyle">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            style="@style/HomeCardImageStyle"
+                            android:src="@drawable/flat" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/HomeCardTextStyle"
+                            android:text="@string/mental_ability_books" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:onClick="openComputerITBooks"
+                        style="@style/HomeCardStyle">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            style="@style/HomeCardImageStyle"
+                            android:src="@drawable/flat" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/HomeCardTextStyle"
+                            android:text="@string/cse_books" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:onClick="openBoardBooks"
+                        style="@style/HomeCardStyle">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            style="@style/HomeCardImageStyle"
+                            android:src="@drawable/flat" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/HomeCardTextStyle"
+                            android:text="@string/board_books" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:onClick="openLargeBooks"
+                        style="@style/HomeCardStyle">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            style="@style/HomeCardImageStyle"
+                            android:src="@drawable/flat" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/HomeCardTextStyle"
+                            android:text="@string/large_books" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:onClick="openMixedBooks"
+                        style="@style/HomeCardStyle">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            style="@style/HomeCardImageStyle"
+                            android:src="@drawable/flat" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/HomeCardTextStyle"
+                            android:text="@string/mixed_books" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </HorizontalScrollView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
