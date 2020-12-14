@@ -8,7 +8,7 @@
 
     <include
         android:id="@+id/scc_e1_toolbar"
-        layout="@layout/toolbar" />
+        layout="@layout/toolbar_layout" />
 
     <ListView
         android:id="@+id/scc_e1_list_view"

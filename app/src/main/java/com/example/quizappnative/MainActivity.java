@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import com.example.quizappnative.jobQuestions.AllBankJobsActivity;
 import com.example.quizappnative.quizActivities.QuizCategoryActivity;
 import com.example.quizappnative.readingMaterials.BooksBDStudyActivity;
 import com.example.quizappnative.readingMaterials.BooksBanglaActivity;
@@ -84,8 +85,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openBanksQuestions(View view) {
-        //Intent intent = new Intent(MainActivity.this, JobsBankQuesActivity.class);
-        //startActivity(intent);
+        Intent intent = new Intent(MainActivity.this, AllBankJobsActivity.class);
+        startActivity(intent);
     }
 
     public void openGovtJobsQuestions(View view) {

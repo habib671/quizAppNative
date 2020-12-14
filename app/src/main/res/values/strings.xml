@@ -92,5 +92,14 @@
     <string name="ssc_islam_all">SSC Islam and Moral Education All Board</string>
     <string name="ssc_e1_all">SSC English 1st Paper All Board</string>
     <string name="ssc_e2_all">SSC English 2nd Paper All Board</string>
+    <string name="agrani_bank">Agrani Bank</string>
+    <string name="bangladesh_bank">Bangladesh Bank</string>
+    <string name="janata_bank">Janata Bank</string>
+    <string name="probashi_kallyan_bank">Probashi Kallyan Bank</string>
+    <string name="sonali_bank">Sonali Bank</string>
+    <string name="uttara_bank">Uttara Bank</string>
+    <string name="combined">Combined</string>
+    <string name="miscellaneous">Miscellaneous</string>
+    <string name="rupali_bank">Rupali Bank</string>
 
 </resources>

@@ -7,7 +7,7 @@
 
     <include
         android:id="@+id/toolbar_search_screen"
-        layout="@layout/toolbar" />
+        layout="@layout/toolbar_layout" />
 
     <TextView
         android:layout_width="match_parent"

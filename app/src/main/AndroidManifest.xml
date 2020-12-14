@@ -12,8 +12,35 @@
         android:supportsRtl="false"
         android:theme="@style/AppThemeDarkPink">
         <activity
-            android:name=".sscQuestions.SSCEnglish2ndActivity"
-            android:parentActivityName=".sscQuestions.SSCMainActivity" />
+            android:name=".jobQuestions.BankUttaraActivity"
+            android:parentActivityName=".jobQuestions.AllBankJobsActivity" />
+        <activity
+            android:name=".jobQuestions.BankSonaliActivity"
+            android:parentActivityName=".jobQuestions.AllBankJobsActivity" />
+        <activity
+            android:name=".jobQuestions.BankRupaliActivity"
+            android:parentActivityName=".jobQuestions.AllBankJobsActivity" />
+        <activity
+            android:name=".jobQuestions.BankPKBActivity"
+            android:parentActivityName=".jobQuestions.AllBankJobsActivity" />
+        <activity
+            android:name=".jobQuestions.BanksMixedActivity"
+            android:parentActivityName=".jobQuestions.AllBankJobsActivity" />
+        <activity
+            android:name=".jobQuestions.BankJanataActivity"
+            android:parentActivityName=".jobQuestions.AllBankJobsActivity" />
+        <activity
+            android:name=".jobQuestions.BanksCombinedActivity"
+            android:parentActivityName=".jobQuestions.AllBankJobsActivity" />
+        <activity
+            android:name=".jobQuestions.BankBangladeshActivity"
+            android:parentActivityName=".jobQuestions.AllBankJobsActivity" />
+        <activity
+            android:name=".jobQuestions.BankAgraniActivity"
+            android:parentActivityName=".jobQuestions.AllBankJobsActivity" />
+        <activity
+            android:name=".jobQuestions.AllBankJobsActivity"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".sscQuestions.SSCEnglish1stActivity"
             android:parentActivityName=".sscQuestions.SSCMainActivity" />

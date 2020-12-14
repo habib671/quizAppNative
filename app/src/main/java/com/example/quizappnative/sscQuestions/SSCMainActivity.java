@@ -82,8 +82,8 @@ public class SSCMainActivity extends AppCompatActivity {
     }
 
     public void openSSCFinanceBanking(View view) {
-        Intent intent = new Intent(SSCMainActivity.this, SSCEnglish2ndActivity.class);
-        startActivity(intent);
+        //Intent intent = new Intent(SSCMainActivity.this, SSCEnglish2ndActivity.class);
+        //startActivity(intent);
     }
 
     public void openSSCGeography(View view) {

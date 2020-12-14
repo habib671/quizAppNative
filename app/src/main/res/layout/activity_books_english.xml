@@ -8,7 +8,7 @@
 
     <include
         android:id="@+id/english_books_toolbar"
-        layout="@layout/toolbar" />
+        layout="@layout/toolbar_layout" />
 
     <ListView
         android:id="@+id/english_books_list_view"

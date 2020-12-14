@@ -8,7 +8,7 @@
 
     <include
         android:id="@+id/scc_chem_toolbar"
-        layout="@layout/toolbar" />
+        layout="@layout/toolbar_layout" />
 
     <ListView
         android:id="@+id/scc_chem_list_view"

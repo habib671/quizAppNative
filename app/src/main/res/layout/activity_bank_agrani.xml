@@ -4,14 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".sscQuestions.SSCEconomicsActivity">
+    tools:context=".jobQuestions.BankAgraniActivity">
 
     <include
-        android:id="@+id/scc_eco_toolbar"
+        android:id="@+id/bank_agra_toolbar"
         layout="@layout/toolbar_layout" />
 
     <ListView
-        android:id="@+id/scc_eco_list_view"
+        android:id="@+id/bank_agra_list_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

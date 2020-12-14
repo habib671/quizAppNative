@@ -7,7 +7,7 @@
 
     <include
         android:id="@+id/web_view_toolbar"
-        layout="@layout/toolbar"
+        layout="@layout/toolbar_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"

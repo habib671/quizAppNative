@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".jobQuestions.AllBankJobsActivity">
+
+    <include
+        android:id="@+id/banks_all_toolbar"
+        layout="@layout/toolbar_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/ListLayoutStyle"
+                android:onClick="openBankAgrani">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/agrani_bank" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/agrani_bank" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/ListLayoutStyle"
+                android:onClick="openBankBD">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/bd_bank" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/bangladesh_bank" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/ListLayoutStyle"
+                android:onClick="openBankJanata">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/janata_bank" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/janata_bank" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/ListLayoutStyle"
+                android:onClick="openBankPKB">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/pkb_bank" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/probashi_kallyan_bank" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/ListLayoutStyle"
+                android:onClick="openBankRupali">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/rupali_bank" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/rupali_bank" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/ListLayoutStyle"
+                android:onClick="openBankSonali">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/sonali_bank" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/sonali_bank" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/ListLayoutStyle"
+                android:onClick="openBankUttara">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/uattara_bank" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/uttara_bank" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/ListLayoutStyle"
+                android:onClick="openBankCombined">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/combined_bank" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/combined" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/ListLayoutStyle"
+                android:onClick="openBankMixed">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/mixed_bank" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/miscellaneous" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
