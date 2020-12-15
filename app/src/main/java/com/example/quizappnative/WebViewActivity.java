@@ -41,12 +41,6 @@ public class WebViewActivity extends AppCompatActivity {
         String title = intent.getStringExtra(NAME_KEY);
         String link = intent.getStringExtra(LINK_KEY);
 
-        //Setting custom Toolbar
-        Toolbar toolbar = findViewById(R.id.web_view_toolbar);
-        setSupportActionBar(toolbar);
-        Objects.requireNonNull(getSupportActionBar()).setTitle(title);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
         ProgressBar progressBar = findViewById(R.id.web_view_progress);
 
         webView = findViewById(R.id.web_view);
@@ -77,11 +71,18 @@ public class WebViewActivity extends AppCompatActivity {
                     downloader(url, userAgent, contentDisposition, mimetype);
                 } else {
                     ActivityCompat.requestPermissions(WebViewActivity.this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
+                    downloader(url, userAgent, contentDisposition, mimetype);
                 }
             } else {
                 downloader(url, userAgent, contentDisposition, mimetype);
             }
         });
+
+        //Setting custom Toolbar
+        Toolbar toolbar = findViewById(R.id.web_view_toolbar);
+        setSupportActionBar(toolbar);
+        Objects.requireNonNull(getSupportActionBar()).setTitle(title);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     private void downloader(final String url, final String userAgent, final String contentDisposition, final String mimetype) {
