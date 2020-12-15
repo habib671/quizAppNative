@@ -1,10 +1,17 @@
 package com.example.quizappnative;
 
+import android.Manifest;
 import android.app.DownloadManager;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.MenuItem;
+import android.view.View;
+import android.webkit.CookieManager;
+import android.webkit.URLUtil;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -15,6 +22,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.app.ActivityCompat;
 
 import java.util.Objects;
 
@@ -48,6 +56,9 @@ public class WebViewActivity extends AppCompatActivity {
             public void onProgressChanged(WebView view, int newProgress) {
                 super.onProgressChanged(view, newProgress);
                 progressBar.setProgress(newProgress);
+                if (newProgress >= 100) {
+                    progressBar.setVisibility(View.GONE);
+                }
             }
         });
 
@@ -61,12 +72,32 @@ public class WebViewActivity extends AppCompatActivity {
         webView.loadUrl(link);
 
         webView.setDownloadListener((url, userAgent, contentDisposition, mimetype, contentLength) -> {
-            DownloadManager.Request downloadRequest = new DownloadManager.Request(Uri.parse(url));
-            downloadRequest.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
-            DownloadManager downloadManager = (DownloadManager) getSystemService(DOWNLOAD_SERVICE);
-            downloadManager.enqueue(downloadRequest);
-            Toast.makeText(WebViewActivity.this, "Downloading", Toast.LENGTH_SHORT).show();
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                if (checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
+                    downloader(url, userAgent, contentDisposition, mimetype);
+                } else {
+                    ActivityCompat.requestPermissions(WebViewActivity.this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
+                }
+            } else {
+                downloader(url, userAgent, contentDisposition, mimetype);
+            }
         });
+    }
+
+    private void downloader(final String url, final String userAgent, final String contentDisposition, final String mimetype) {
+        String fileName = URLUtil.guessFileName(url, contentDisposition, mimetype);
+        String cookie = CookieManager.getInstance().getCookie(url);
+
+        DownloadManager downloadManager = (DownloadManager) getSystemService(DOWNLOAD_SERVICE);
+        DownloadManager.Request downloadRequest = new DownloadManager.Request(Uri.parse(url));
+        downloadRequest.addRequestHeader("Cookie", cookie);
+        downloadRequest.addRequestHeader("User-Agent", userAgent);
+        downloadRequest.allowScanningByMediaScanner();
+        downloadRequest.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
+        downloadRequest.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, fileName);
+        downloadManager.enqueue(downloadRequest);
+
+        Toast.makeText(WebViewActivity.this, "Downloading - " + fileName, Toast.LENGTH_SHORT).show();
     }
 
     @Override
