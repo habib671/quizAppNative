@@ -16,24 +16,43 @@ import java.util.Objects;
 public class BooksMathsActivity extends AppCompatActivity {
 
     private final String[] links = {
-            "https://google.com",
-            "https://drive.google.com/file/d/1n-_Y9sB7rKmZ4ozRxzXQyJbnew_ToLhS/view?usp=sharing",
-            "https://drive.google.com/file/d/1N81N3cqczOAKbRqIIM_5Mi_dVEh1WCw5/view?usp=sharing",
-            "https://drive.google.com/file/d/1HCzjYJWEvyOlqGaeLeI3p_-mLI_T4MXh/view?usp=sharing"
+            "https://drive.google.com/file/d/1-y-Ij-ggDaal7Ed51pYXmDTKGMVFxc-W/view?usp=sharing",
+            "https://drive.google.com/file/d/1yW_CR-9WpFiohkgHhl92_ZZ_qXzk9Mrv/view?usp=sharing",
+            "https://drive.google.com/file/d/1VQbImmY_si48x46KtEw3cRitZOJipvRD/view?usp=sharing",
+            "https://drive.google.com/file/d/1HhZ4IaRDXuCHgECXmUXkJ83UtA22ypjz/view?usp=sharing",
+            "https://drive.google.com/file/d/1ofRxzgv7N6DdQG53-c5AordaqxMrMNjY/view?usp=sharing",
+            "https://drive.google.com/file/d/1pObLnqc-KJWbUf3KAMMiI7cfxr_aZvcR/view?usp=sharing",
+            "https://drive.google.com/file/d/1VlRKMgHus-Hn1Rm9lIjlodCUJDicrnyO/view?usp=sharing",
+            "https://drive.google.com/file/d/1w_hksml8QoK2y9LhL3orafDOl72pqYRs/view?usp=sharing",
+            "https://drive.google.com/file/d/1JTDIhSNvXzxwGzby38bx4FvigGZuR9-P/view?usp=sharing",
+            "https://drive.google.com/file/d/1bGMUDw9tyUgNa8AnpN3KrVFeT5qQc_Sn/view?usp=sharing",
     };
 
     private final String[] names = {
-            "Google.com",
-            "11 Poets",
-            "Bangla Cyclone",
-            "Bangla Shahitto"
+            "Faculty Based Bank Written",
+            "Khairul's Advanced Math(Agarwal Selected Part)",
+            "Khairul's Bank Written Math",
+            "Khairul's Basic",
+            "Khairul's Basic Mental Ability",
+            "Oracle Math",
+            "Oracle Mathematical Reasoning",
+            "Professor's Gonit Special",
+            "Saifurs Math",
+            "Jemetik Songa"
     };
 
     private final int[] image = {
-            R.drawable.logo,
-            R.drawable.flat,
-            R.drawable.flat,
-            R.drawable.flat
+            R.drawable.math_logo,
+            R.drawable.math_logo,
+            R.drawable.math_logo,
+            R.drawable.math_logo,
+            R.drawable.math_logo,
+            R.drawable.math_logo,
+            R.drawable.math_logo,
+            R.drawable.math_logo,
+            R.drawable.math_logo,
+            R.drawable.math_logo,
+
     };
 
     @Override
