@@ -16,14 +16,26 @@ import java.util.Objects;
 public class SSCCivicsActivity extends AppCompatActivity {
 
     private final String[] links = {
-            "https://google.com",
+            "https://drive.google.com/file/d/1HVOUdIMS0gfl68HCFf5VFSqzHkhonDeL/view?usp=sharing",
+            "https://drive.google.com/file/d/1XLqEhFJ82irKFzHMETxCVHuYmpidCTbJ/view?usp=sharing",
+            "https://drive.google.com/file/d/1ggUkPtk4tvL0CWuc7rSwkZU9SkoAU5Ui/view?usp=sharing",
+            "https://drive.google.com/file/d/1zrkjuwfVGUNCs40qATDBtzHGi2LK-Ciw/view?usp=sharing",
+            "https://drive.google.com/file/d/1aK7singqld2OkCX94vqkrq8-6ZarJm0H/view?usp=sharing",
     };
 
     private final String[] names = {
-            "Int Aff",
+            "Civics 2015",
+            "Civics 2016",
+            "Civics 2017",
+            "Civics 2018",
+            "Civics 2019",
     };
 
     private final int[] image = {
+            R.drawable.ssc_exam,
+            R.drawable.ssc_exam,
+            R.drawable.ssc_exam,
+            R.drawable.ssc_exam,
             R.drawable.ssc_exam,
     };
 

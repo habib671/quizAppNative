@@ -16,14 +16,26 @@ import java.util.Objects;
 public class SSCBusinessInitActivity extends AppCompatActivity {
 
     private final String[] links = {
-            "https://google.com",
+            "https://drive.google.com/file/d/1HEg9903_jEJTGXAAQyWdEQ0w-lNnsI22/view?usp=sharing",
+            "https://drive.google.com/file/d/1_K_vrXmAhjupx7t1BwsdZEunrkHEvqQU/view?usp=sharing",
+            "https://drive.google.com/file/d/1wom1y6uo-trbV4du733deBkGVibzTVlI/view?usp=sharing",
+            "https://drive.google.com/file/d/10_o76oR6fHe2C0TyJ5kjCMXWOljLWCkX/view?usp=sharing",
+            "https://drive.google.com/file/d/15ws2j-TK_1z2FSb1FaIDwhwiXGCEIqu3/view?usp=sharing",
     };
 
     private final String[] names = {
-            "Int Aff",
+            "Business Initiative 2015",
+            "Business Initiative 2016",
+            "Business Initiative 2017",
+            "Business Initiative 2018",
+            "Business Initiative 2019",
     };
 
     private final int[] image = {
+            R.drawable.ssc_exam,
+            R.drawable.ssc_exam,
+            R.drawable.ssc_exam,
+            R.drawable.ssc_exam,
             R.drawable.ssc_exam,
     };
 

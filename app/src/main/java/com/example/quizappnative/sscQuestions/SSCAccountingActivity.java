@@ -16,14 +16,26 @@ import java.util.Objects;
 public class SSCAccountingActivity extends AppCompatActivity {
 
     private final String[] links = {
-            "https://google.com",
+            "https://drive.google.com/file/d/1MRgjtDnuYPFCmse_HC__MA30jIudxeZ8/view?usp=sharing",
+            "https://drive.google.com/file/d/1QgihYAg7b8wESZGulZFH5Up9fvBKzLwA/view?usp=sharing",
+            "https://drive.google.com/file/d/1wyDUR6TinxRzL-27ydhLYFCny9683oU8/view?usp=sharing",
+            "https://drive.google.com/file/d/17ax8t0gzcYJmoNFEbksQysamvpv30oPd/view?usp=sharing",
+            "https://drive.google.com/file/d/1yjQUzrYKkTDqxVyGagYS4tAkke4K-98C/view?usp=sharing",
     };
 
     private final String[] names = {
-            "Int Aff",
+            "Accounting 2015",
+            "Accounting 2016",
+            "Accounting 2017",
+            "Accounting 2018",
+            "Accounting 2019",
     };
 
     private final int[] image = {
+            R.drawable.ssc_exam,
+            R.drawable.ssc_exam,
+            R.drawable.ssc_exam,
+            R.drawable.ssc_exam,
             R.drawable.ssc_exam,
     };
 

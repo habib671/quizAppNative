@@ -16,14 +16,26 @@ import java.util.Objects;
 public class SSCBDWorldViewActivity extends AppCompatActivity {
 
     private final String[] links = {
-            "https://google.com",
+            "https://drive.google.com/file/d/1zyqwaFQP6eMNXIVDWOir2BHrvcsenoI3/view?usp=sharing",
+            "https://drive.google.com/file/d/1mt2RS-egsICvApIpAuAw1fBKqY6XT3EE/view?usp=sharing",
+            "https://drive.google.com/file/d/1UHHSQ-bROAO--Om4JR8D-umzHOo_gQm9/view?usp=sharing",
+            "https://drive.google.com/file/d/14dLDfq1VpNcAc6gWsJx0vjvo_97KKced/view?usp=sharing",
+            "https://drive.google.com/file/d/1KgrG4YtAzjb_XrfiHXG3XPYBplnJ21Mi/view?usp=sharing",
     };
 
     private final String[] names = {
-            "Int Aff",
+            "Bangladesh and World 2015",
+            "Bangladesh and World 2016",
+            "Bangladesh and World 2017",
+            "Bangladesh and World 2018",
+            "Bangladesh and World 2019",
     };
 
     private final int[] image = {
+            R.drawable.ssc_exam,
+            R.drawable.ssc_exam,
+            R.drawable.ssc_exam,
+            R.drawable.ssc_exam,
             R.drawable.ssc_exam,
     };
 

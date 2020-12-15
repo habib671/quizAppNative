@@ -16,14 +16,26 @@ import java.util.Objects;
 public class SSCAgricultureActivity extends AppCompatActivity {
 
     private final String[] links = {
-            "https://google.com",
+            "https://drive.google.com/file/d/1JACuDwzHaQUErjozF2t2KQKFabdfuZCp/view?usp=sharing",
+            "https://drive.google.com/file/d/1p-PZHyFqRryp6kNYBLY4sSmuxb70SjS0/view?usp=sharing",
+            "https://drive.google.com/file/d/15aJIMEas2T_YfujiWohT5ot2oc3mmN4j/view?usp=sharing",
+            "https://drive.google.com/file/d/1IzYqSQRK7Lvks0X_UDzBJrkA-07EpEcS/view?usp=sharing",
+            "https://drive.google.com/file/d/1gwSZ6SCDFnjwDgkw4RH4qQVyc8P8lUlT/view?usp=sharing",
     };
 
     private final String[] names = {
-            "Int Aff",
+            "Agriculture 2015",
+            "Agriculture 2016",
+            "Agriculture 2017",
+            "Agriculture 2018",
+            "Agriculture 2019",
     };
 
     private final int[] image = {
+            R.drawable.ssc_exam,
+            R.drawable.ssc_exam,
+            R.drawable.ssc_exam,
+            R.drawable.ssc_exam,
             R.drawable.ssc_exam,
     };
 

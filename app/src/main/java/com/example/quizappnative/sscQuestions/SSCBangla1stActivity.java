@@ -15,18 +15,20 @@ import java.util.Objects;
 
 public class SSCBangla1stActivity extends AppCompatActivity {
     private final String[] links = {
-            "https://google.com",
-            "https://google.com",
-            "https://google.com",
-            "https://google.com",
-            "https://google.com",
+            "https://drive.google.com/file/d/1PHXBi97wU6QkrlujweMKjhp_Nzeqhhbd/view?usp=sharing",
+            "https://drive.google.com/file/d/1668oxfxXjbfb8QeJrjLVQNWRNITgvJPL/view?usp=sharing",
+            "https://drive.google.com/file/d/1DVpXcq3kqy7P-ni-J1D8ptJVhP6oo50g/view?usp=sharing",
+            "https://drive.google.com/file/d/1AqVz3gcPjo2csgw0ClR4kfAIvqdIQYDM/view?usp=sharing",
+            "https://drive.google.com/file/d/1RC8-iNh33xBC66I6ReoNqDq40Kf_itNW/view?usp=sharing",
     };
 
     private final String[] names = {
-            "Int Aff",
-            "Int Aff",
-            "Int Aff",
-            "Int Aff",
+            "Bangla 1st 2015",
+            "Bangla 1st 2016",
+            "Bangla 1st 2017",
+            "Bangla 1st 2018",
+            "Bangla 1st 2019",
+
     };
 
     private final int[] image = {
