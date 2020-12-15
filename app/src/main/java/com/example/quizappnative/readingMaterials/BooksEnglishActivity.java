@@ -63,26 +63,26 @@ public class BooksEnglishActivity extends AppCompatActivity {
     };
 
     private final int[] image = {
-            R.drawable.flat,
-            R.drawable.flat,
-            R.drawable.flat,
-            R.drawable.flat,
-            R.drawable.flat,
-            R.drawable.flat,
-            R.drawable.flat,
-            R.drawable.flat,
-            R.drawable.flat,
-            R.drawable.flat,
-            R.drawable.flat,
-            R.drawable.flat,
-            R.drawable.flat,
-            R.drawable.flat,
-            R.drawable.flat,
-            R.drawable.flat,
-            R.drawable.flat,
-            R.drawable.flat,
-            R.drawable.flat,
-            R.drawable.flat,
+            R.drawable.english,
+            R.drawable.english,
+            R.drawable.english,
+            R.drawable.english,
+            R.drawable.english,
+            R.drawable.english,
+            R.drawable.english,
+            R.drawable.english,
+            R.drawable.english,
+            R.drawable.english,
+            R.drawable.english,
+            R.drawable.english,
+            R.drawable.english,
+            R.drawable.english,
+            R.drawable.english,
+            R.drawable.english,
+            R.drawable.english,
+            R.drawable.english,
+            R.drawable.english,
+            R.drawable.english,
     };
 
     @Override
@@ -103,8 +103,8 @@ public class BooksEnglishActivity extends AppCompatActivity {
         listView.setAdapter(adapter);
         listView.setOnItemClickListener((parent, view, position, id) -> {
             Intent intent = new Intent(BooksEnglishActivity.this, WebViewActivity.class);
-            intent.putExtra(WebViewActivity.PDF_NAME_KEY, names[position]);
-            intent.putExtra(WebViewActivity.DRIVE_LINK_URL_KEY, links[position]);
+            intent.putExtra(WebViewActivity.NAME_KEY, names[position]);
+            intent.putExtra(WebViewActivity.LINK_KEY, links[position]);
             startActivity(intent);
         });
     }

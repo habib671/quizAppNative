@@ -11,14 +11,16 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import com.example.quizappnative.jobQuestions.AllBankJobsActivity;
+import com.example.quizappnative.admissionQuestins.AllAdmissionActivity;
+import com.example.quizappnative.jobAllQuestions.JobBCSActivity;
+import com.example.quizappnative.jobBankQuestions.AllBankJobsActivity;
 import com.example.quizappnative.quizActivities.QuizCategoryActivity;
 import com.example.quizappnative.readingMaterials.BooksBDStudyActivity;
 import com.example.quizappnative.readingMaterials.BooksBanglaActivity;
+import com.example.quizappnative.readingMaterials.BooksEngLiterActivity;
 import com.example.quizappnative.readingMaterials.BooksEnglishActivity;
 import com.example.quizappnative.readingMaterials.BooksIntAffairActivity;
 import com.example.quizappnative.readingMaterials.BooksMathsActivity;
-import com.example.quizappnative.readingMaterials.BooksEngLiterActivity;
 import com.example.quizappnative.sscQuestions.SSCMainActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -74,14 +76,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openAdmissionQuestions(View view) {
-        //Intent intent = new Intent(MainActivity.this, SearchActivity.class);
-        //startActivity(intent);
+        Intent intent = new Intent(MainActivity.this, AllAdmissionActivity.class);
+        startActivity(intent);
     }
 
 
     public void openBCSQuestions(View view) {
-        //Intent intent = new Intent(MainActivity.this, SearchActivity.class);
-        //startActivity(intent);
+        Intent intent = new Intent(MainActivity.this, JobBCSActivity.class);
+        startActivity(intent);
     }
 
     public void openBanksQuestions(View view) {

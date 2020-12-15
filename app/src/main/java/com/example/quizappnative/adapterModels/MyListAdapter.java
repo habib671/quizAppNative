@@ -15,10 +15,10 @@ import com.example.quizappnative.R;
 
 public class MyListAdapter extends ArrayAdapter<String> {
 
-    Context mContext;
-    int[] mImages;
-    String[] mNames;
-    String[] mLinks;
+    private final Context mContext;
+    private final int[] mImages;
+    private final String[] mNames;
+    private final String[] mLinks;
 
     public MyListAdapter(@NonNull Context context, int[] images, String[] names, String[] links) {
         super(context, R.layout.list_view_layout);
@@ -26,6 +26,10 @@ public class MyListAdapter extends ArrayAdapter<String> {
         mImages = images;
         mNames = names;
         mLinks = links;
+    }
+
+    public String[] getLinks() {
+        return mLinks;
     }
 
     static class MyViewHolder {
@@ -43,6 +47,7 @@ public class MyListAdapter extends ArrayAdapter<String> {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
         MyViewHolder holder;
+
         if (convertView == null) {
             LayoutInflater inflater = LayoutInflater.from(mContext);
             convertView = inflater.inflate(R.layout.list_view_layout, parent, false);

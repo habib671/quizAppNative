@@ -8,7 +8,7 @@
         android:id="@+id/ques_image"
         style="@style/ListImageStyle"
         android:contentDescription="@string/image_view"
-        android:src="@drawable/logo" />
+        android:src="@drawable/app_icon" />
 
     <TextView
         android:id="@+id/ques_name"

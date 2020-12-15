@@ -1,4 +1,4 @@
-package com.example.quizappnative.jobQuestions;
+package com.example.quizappnative.jobBankQuestions;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -63,8 +63,8 @@ public class BanksCombinedActivity extends AppCompatActivity {
         listView.setAdapter(adapter);
         listView.setOnItemClickListener((parent, view, position, id) -> {
             Intent intent = new Intent(BanksCombinedActivity.this, WebViewActivity.class);
-            intent.putExtra(WebViewActivity.PDF_NAME_KEY, names[position]);
-            intent.putExtra(WebViewActivity.DRIVE_LINK_URL_KEY, links[position]);
+            intent.putExtra(WebViewActivity.NAME_KEY, names[position]);
+            intent.putExtra(WebViewActivity.LINK_KEY, links[position]);
             startActivity(intent);
         });
     }

@@ -42,17 +42,16 @@ public class BooksMathsActivity extends AppCompatActivity {
     };
 
     private final int[] image = {
-            R.drawable.math_logo,
-            R.drawable.math_logo,
-            R.drawable.math_logo,
-            R.drawable.math_logo,
-            R.drawable.math_logo,
-            R.drawable.math_logo,
-            R.drawable.math_logo,
-            R.drawable.math_logo,
-            R.drawable.math_logo,
-            R.drawable.math_logo,
-
+            R.drawable.math,
+            R.drawable.math,
+            R.drawable.math,
+            R.drawable.math,
+            R.drawable.math,
+            R.drawable.math,
+            R.drawable.math,
+            R.drawable.math,
+            R.drawable.math,
+            R.drawable.math,
     };
 
     @Override
@@ -74,8 +73,8 @@ public class BooksMathsActivity extends AppCompatActivity {
         listView.setAdapter(adapter);
         listView.setOnItemClickListener((parent, view, position, id) -> {
             Intent intent = new Intent(BooksMathsActivity.this, WebViewActivity.class);
-            intent.putExtra(WebViewActivity.PDF_NAME_KEY, names[position]);
-            intent.putExtra(WebViewActivity.DRIVE_LINK_URL_KEY, links[position]);
+            intent.putExtra(WebViewActivity.NAME_KEY, names[position]);
+            intent.putExtra(WebViewActivity.LINK_KEY, links[position]);
             startActivity(intent);
         });
     }

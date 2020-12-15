@@ -1,4 +1,4 @@
-package com.example.quizappnative.jobQuestions;
+package com.example.quizappnative.jobBankQuestions;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -102,8 +102,8 @@ public class BanksMixedActivity extends AppCompatActivity {
         listView.setAdapter(adapter);
         listView.setOnItemClickListener((parent, view, position, id) -> {
             Intent intent = new Intent(BanksMixedActivity.this, WebViewActivity.class);
-            intent.putExtra(WebViewActivity.PDF_NAME_KEY, names[position]);
-            intent.putExtra(WebViewActivity.DRIVE_LINK_URL_KEY, links[position]);
+            intent.putExtra(WebViewActivity.NAME_KEY, names[position]);
+            intent.putExtra(WebViewActivity.LINK_KEY, links[position]);
             startActivity(intent);
         });
     }

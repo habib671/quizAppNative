@@ -21,15 +21,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="?attr/colorPrimarySurface"
-            android:gravity="center"
+            android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:padding="16dp"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="16dp"
             app:layout_scrollFlags="scroll|snap">
 
             <androidx.appcompat.widget.AppCompatTextView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
+                android:layout_weight="1"
                 android:text="@string/test_your_knowledge_by_taking_quiz" />
 
             <androidx.appcompat.widget.AppCompatTextView
@@ -83,8 +85,8 @@
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
                     <androidx.appcompat.widget.LinearLayoutCompat
-                        android:onClick="openHSCQuestions"
-                        style="@style/HomeCardStyle">
+                        style="@style/HomeCardStyle"
+                        android:onClick="openHSCQuestions">
 
                         <androidx.appcompat.widget.AppCompatImageView
                             style="@style/HomeCardImageStyle"
@@ -97,8 +99,8 @@
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
                     <androidx.appcompat.widget.LinearLayoutCompat
-                        android:onClick="openAdmissionQuestions"
-                        style="@style/HomeCardStyle">
+                        style="@style/HomeCardStyle"
+                        android:onClick="openAdmissionQuestions">
 
                         <androidx.appcompat.widget.AppCompatImageView
                             style="@style/HomeCardImageStyle"
@@ -124,8 +126,8 @@
                 <androidx.appcompat.widget.LinearLayoutCompat style="@style/HorizontalScrollViewChildSize">
 
                     <androidx.appcompat.widget.LinearLayoutCompat
-                        android:onClick="openBCSQuestions"
-                        style="@style/HomeCardStyle">
+                        style="@style/HomeCardStyle"
+                        android:onClick="openBCSQuestions">
 
                         <androidx.appcompat.widget.AppCompatImageView
                             style="@style/HomeCardImageStyle"
@@ -138,12 +140,12 @@
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
                     <androidx.appcompat.widget.LinearLayoutCompat
-                        android:onClick="openBanksQuestions"
-                        style="@style/HomeCardStyle">
+                        style="@style/HomeCardStyle"
+                        android:onClick="openBanksQuestions">
 
                         <androidx.appcompat.widget.AppCompatImageView
                             style="@style/HomeCardImageStyle"
-                            android:src="@drawable/bangladesh_bank" />
+                            android:src="@drawable/banks_building" />
 
                         <androidx.appcompat.widget.AppCompatTextView
                             style="@style/HomeCardTextStyle"
@@ -152,8 +154,8 @@
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
                     <androidx.appcompat.widget.LinearLayoutCompat
-                        android:onClick="openGovtJobsQuestions"
-                        style="@style/HomeCardStyle">
+                        style="@style/HomeCardStyle"
+                        android:onClick="openGovtJobsQuestions">
 
                         <androidx.appcompat.widget.AppCompatImageView
                             style="@style/HomeCardImageStyle"
@@ -166,8 +168,8 @@
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
                     <androidx.appcompat.widget.LinearLayoutCompat
-                        android:onClick="openCSEJobsQuestions"
-                        style="@style/HomeCardStyle">
+                        style="@style/HomeCardStyle"
+                        android:onClick="openCSEJobsQuestions">
 
                         <androidx.appcompat.widget.AppCompatImageView
                             style="@style/HomeCardImageStyle"
@@ -180,8 +182,8 @@
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
                     <androidx.appcompat.widget.LinearLayoutCompat
-                        android:onClick="openEEEJobsQuestions"
-                        style="@style/HomeCardStyle">
+                        style="@style/HomeCardStyle"
+                        android:onClick="openEEEJobsQuestions">
 
                         <androidx.appcompat.widget.AppCompatImageView
                             style="@style/HomeCardImageStyle"
@@ -212,7 +214,7 @@
 
                         <androidx.appcompat.widget.AppCompatImageView
                             style="@style/HomeCardImageStyle"
-                            android:src="@drawable/flat" />
+                            android:src="@drawable/bangla_itereture" />
 
                         <androidx.appcompat.widget.AppCompatTextView
                             style="@style/HomeCardTextStyle"
@@ -226,7 +228,7 @@
 
                         <androidx.appcompat.widget.AppCompatImageView
                             style="@style/HomeCardImageStyle"
-                            android:src="@drawable/flat" />
+                            android:src="@drawable/english" />
 
                         <androidx.appcompat.widget.AppCompatTextView
                             style="@style/HomeCardTextStyle"
@@ -240,7 +242,7 @@
 
                         <androidx.appcompat.widget.AppCompatImageView
                             style="@style/HomeCardImageStyle"
-                            android:src="@drawable/flat" />
+                            android:src="@drawable/math" />
 
                         <androidx.appcompat.widget.AppCompatTextView
                             style="@style/HomeCardTextStyle"
@@ -254,7 +256,7 @@
 
                         <androidx.appcompat.widget.AppCompatImageView
                             style="@style/HomeCardImageStyle"
-                            android:src="@drawable/flat" />
+                            android:src="@drawable/bd" />
 
                         <androidx.appcompat.widget.AppCompatTextView
                             style="@style/HomeCardTextStyle"
@@ -268,7 +270,7 @@
 
                         <androidx.appcompat.widget.AppCompatImageView
                             style="@style/HomeCardImageStyle"
-                            android:src="@drawable/flat" />
+                            android:src="@drawable/english_literature" />
 
                         <androidx.appcompat.widget.AppCompatTextView
                             style="@style/HomeCardTextStyle"
@@ -282,7 +284,7 @@
 
                         <androidx.appcompat.widget.AppCompatImageView
                             style="@style/HomeCardImageStyle"
-                            android:src="@drawable/flat" />
+                            android:src="@drawable/international" />
 
                         <androidx.appcompat.widget.AppCompatTextView
                             style="@style/HomeCardTextStyle"
@@ -291,8 +293,8 @@
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
                     <androidx.appcompat.widget.LinearLayoutCompat
-                        android:onClick="openGenKnwBooks"
-                        style="@style/HomeCardStyle">
+                        style="@style/HomeCardStyle"
+                        android:onClick="openGenKnwBooks">
 
                         <androidx.appcompat.widget.AppCompatImageView
                             style="@style/HomeCardImageStyle"
@@ -305,8 +307,8 @@
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
                     <androidx.appcompat.widget.LinearLayoutCompat
-                        android:onClick="openGeographyBooks"
-                        style="@style/HomeCardStyle">
+                        style="@style/HomeCardStyle"
+                        android:onClick="openGeographyBooks">
 
                         <androidx.appcompat.widget.AppCompatImageView
                             style="@style/HomeCardImageStyle"
@@ -319,8 +321,8 @@
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
                     <androidx.appcompat.widget.LinearLayoutCompat
-                        android:onClick="openNoitikotaBooks"
-                        style="@style/HomeCardStyle">
+                        style="@style/HomeCardStyle"
+                        android:onClick="openNoitikotaBooks">
 
                         <androidx.appcompat.widget.AppCompatImageView
                             style="@style/HomeCardImageStyle"
@@ -333,8 +335,8 @@
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
                     <androidx.appcompat.widget.LinearLayoutCompat
-                        android:onClick="openMentalAbilityBooks"
-                        style="@style/HomeCardStyle">
+                        style="@style/HomeCardStyle"
+                        android:onClick="openMentalAbilityBooks">
 
                         <androidx.appcompat.widget.AppCompatImageView
                             style="@style/HomeCardImageStyle"
@@ -347,8 +349,8 @@
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
                     <androidx.appcompat.widget.LinearLayoutCompat
-                        android:onClick="openComputerITBooks"
-                        style="@style/HomeCardStyle">
+                        style="@style/HomeCardStyle"
+                        android:onClick="openComputerITBooks">
 
                         <androidx.appcompat.widget.AppCompatImageView
                             style="@style/HomeCardImageStyle"
@@ -361,8 +363,8 @@
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
                     <androidx.appcompat.widget.LinearLayoutCompat
-                        android:onClick="openBoardBooks"
-                        style="@style/HomeCardStyle">
+                        style="@style/HomeCardStyle"
+                        android:onClick="openBoardBooks">
 
                         <androidx.appcompat.widget.AppCompatImageView
                             style="@style/HomeCardImageStyle"
@@ -375,8 +377,8 @@
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
                     <androidx.appcompat.widget.LinearLayoutCompat
-                        android:onClick="openLargeBooks"
-                        style="@style/HomeCardStyle">
+                        style="@style/HomeCardStyle"
+                        android:onClick="openLargeBooks">
 
                         <androidx.appcompat.widget.AppCompatImageView
                             style="@style/HomeCardImageStyle"
@@ -389,8 +391,8 @@
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
                     <androidx.appcompat.widget.LinearLayoutCompat
-                        android:onClick="openMixedBooks"
-                        style="@style/HomeCardStyle">
+                        style="@style/HomeCardStyle"
+                        android:onClick="openMixedBooks">
 
                         <androidx.appcompat.widget.AppCompatImageView
                             style="@style/HomeCardImageStyle"

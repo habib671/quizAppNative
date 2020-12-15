@@ -215,7 +215,7 @@
             </androidx.appcompat.widget.LinearLayoutCompat>
 
             <androidx.appcompat.widget.LinearLayoutCompat
-                android:onClick="openSSCgMath"
+                android:onClick="openSSCGeneralMath"
                 style="@style/ListLayoutStyle">
 
                 <androidx.appcompat.widget.AppCompatImageView
@@ -267,7 +267,7 @@
             </androidx.appcompat.widget.LinearLayoutCompat>
 
             <androidx.appcompat.widget.LinearLayoutCompat
-                android:onClick="openSSCgScience"
+                android:onClick="openSSCScience"
                 style="@style/ListLayoutStyle">
 
                 <androidx.appcompat.widget.AppCompatImageView
@@ -280,7 +280,7 @@
             </androidx.appcompat.widget.LinearLayoutCompat>
 
             <androidx.appcompat.widget.LinearLayoutCompat
-                android:onClick="openSSCict"
+                android:onClick="openSSC_ICT"
                 style="@style/ListLayoutStyle">
 
                 <androidx.appcompat.widget.AppCompatImageView

@@ -1,4 +1,4 @@
-package com.example.quizappnative.jobQuestions;
+package com.example.quizappnative.jobBankQuestions;
 
 import android.content.Intent;
 import android.os.Bundle;

@@ -7,15 +7,16 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.example.quizappnative.quizActivities.QuizQuestionActivity;
 import com.example.quizappnative.R;
+import com.example.quizappnative.quizActivities.QuizQuestionActivity;
 
 public class QuizSetsAdapter extends BaseAdapter {
     public QuizSetsAdapter(int numberOfSets) {
         this.numberOfSets = numberOfSets;
     }
 
-    private int numberOfSets;
+    private final int numberOfSets;
+
     @Override
     public int getCount() {
         return numberOfSets;
@@ -35,21 +36,17 @@ public class QuizSetsAdapter extends BaseAdapter {
     public View getView(final int position, View convertView, final ViewGroup parent) {
 
         View view;
-        if(convertView == null){
-            view= LayoutInflater.from(parent.getContext()).inflate(R.layout.quiz_sets_layout,parent,false);
-        }
-        else{
+        if (convertView == null) {
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.quiz_sets_layout, parent, false);
+        } else {
             view = convertView;
         }
-        view.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(parent.getContext(), QuizQuestionActivity.class);
-                intent.putExtra("SETNO",position+1);
-                parent.getContext().startActivity(intent);
-            }
+        view.setOnClickListener(view1 -> {
+            Intent intent = new Intent(parent.getContext(), QuizQuestionActivity.class);
+            intent.putExtra("SETNO", position + 1);
+            parent.getContext().startActivity(intent);
         });
-        ( (TextView) view.findViewById(R.id.setsNumberTextView)).setText(String.valueOf(position+1));
+        ((TextView) view.findViewById(R.id.setsNumberTextView)).setText(String.valueOf(position + 1));
 
         //this random class will generate random things,in this case it will generate random colors for grid item
         /*Random random = new Random();

@@ -101,5 +101,21 @@
     <string name="combined">Combined</string>
     <string name="miscellaneous">Miscellaneous</string>
     <string name="rupali_bank">Rupali Bank</string>
+    <string name="uni_buet">Bangladesh University of Engineering &amp; Technology</string>
+    <string name="uni_butex">Bangladesh University of Textiles</string>
+    <string name="uni_chitt">University of Chittagong</string>
+    <string name="uni_comilla">Comilla University</string>
+    <string name="uni_cuet">Chittagong University of Engineering &amp; Technology</string>
+    <string name="uni_dhaka">University of Dhaka</string>
+    <string name="uni_jahangir">Jahangirnagar University</string>
+    <string name="uni_jagannath">Jagannath University</string>
+    <string name="uni_kazi_nazrul">Jatiya Kabi Kazi Nazrul Islam University</string>
+    <string name="uni_mediacl">Medical Colleges</string>
+    <string name="uni_noakhali">Noakhali Science &amp; Technology University</string>
+    <string name="uni_rajshahi">University of Rajshahi</string>
+    <string name="uni_ruet">Rajshahi University of Engineering &amp; Technology</string>
+    <string name="uni_sust">Shahjalal University of Science &amp; Technology</string>
+    <string name="uni_khulna">Khulna University</string>
+    <string name="uni_kuet">Khulna University of Engineering &amp; Technology</string>
 
 </resources>

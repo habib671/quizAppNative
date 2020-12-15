@@ -47,7 +47,10 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@drawable/outline_background</item>
-        <item name="android:padding">16dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
     </style>
 
     <!--Radio Button Style for Theme Chooser-->
@@ -73,11 +76,11 @@
 
     <!--Home Cards Style-->
     <style name="HomeCardStyle">
-        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:orientation">vertical</item>
         <item name="android:layout_margin">8dp</item>
-        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
     </style>
 
     <!--Home Cards Image style-->
@@ -89,9 +92,9 @@
 
     <!--Home Cards Text style-->
     <style name="HomeCardTextStyle">
-        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_width">120dp</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_margin">4dp</item>
+        <item name="android:layout_marginTop">4dp</item>
         <item name="android:gravity">center</item>
         <item name="android:textSize">16sp</item>
         <item name="android:textStyle">bold</item>
@@ -101,11 +104,10 @@
     <!--List layout style-->
     <style name="ListLayoutStyle">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_height">81dp</item>
         <item name="android:background">#40808080</item>
         <item name="android:foreground">?android:attr/selectableItemBackground</item>
         <item name="android:orientation">horizontal</item>
-        <item name="android:paddingBottom">1dp</item>
     </style>
 
     <!--List image style-->
@@ -124,7 +126,7 @@
         <item name="android:background">?android:attr/colorBackground</item>
         <item name="android:gravity">center_vertical</item>
         <item name="android:textColor">?android:attr/textColorPrimaryNoDisable</item>
-        <item name="android:textSize">20sp</item>
+        <item name="android:textSize">16sp</item>
     </style>
 
 </resources>

@@ -41,36 +41,36 @@ public class BooksBanglaActivity extends AppCompatActivity {
             "Digest Bangla Literature",
             "Oracle Bangla",
             "Professor Bangla",
-           "Rabindra-Nazrul 600 MCQ",
-           "ALL Prev Question From 11 Poets",
-           "কবি সাহিত্যিকদের নিয়ে বি সি এস এ আসা প্রশ্ন",
-           "Bangla Biddar System",
-           "Charzapad A 2 Z",
-           "Rabindranath Tagore",
-           "Shikar by Mohsina Nazila",
-           "Bangla sahitter Tothyo O Tricks",
-           "Bangla Vasha o Sahitto Note",
-           "Bangla Sahitto Hand Note",
+            "Rabindra-Nazrul 600 MCQ",
+            "ALL Prev Question From 11 Poets",
+            "কবি সাহিত্যিকদের নিয়ে বি সি এস এ আসা প্রশ্ন",
+            "Bangla Biddar System",
+            "Charzapad A 2 Z",
+            "Rabindranath Tagore",
+            "Shikar by Mohsina Nazila",
+            "Bangla sahitter Tothyo O Tricks",
+            "Bangla Vasha o Sahitto Note",
+            "Bangla Sahitto Hand Note",
 
     };
 
     private final int[] image = {
-            R.drawable.flat,
-            R.drawable.flat,
-            R.drawable.flat,
-            R.drawable.flat,
-            R.drawable.flat,
-            R.drawable.flat,
-            R.drawable.flat,
-            R.drawable.flat,
-            R.drawable.flat,
-            R.drawable.flat,
-            R.drawable.flat,
-            R.drawable.flat,
-            R.drawable.flat,
-            R.drawable.flat,
-            R.drawable.flat,
-            R.drawable.flat,
+            R.drawable.bangla_itereture,
+            R.drawable.bangla_itereture,
+            R.drawable.bangla_itereture,
+            R.drawable.bangla_itereture,
+            R.drawable.bangla_itereture,
+            R.drawable.bangla_itereture,
+            R.drawable.bangla_itereture,
+            R.drawable.bangla_itereture,
+            R.drawable.bangla_itereture,
+            R.drawable.bangla_itereture,
+            R.drawable.bangla_itereture,
+            R.drawable.bangla_itereture,
+            R.drawable.bangla_itereture,
+            R.drawable.bangla_itereture,
+            R.drawable.bangla_itereture,
+            R.drawable.bangla_itereture,
     };
 
     @Override
@@ -91,8 +91,8 @@ public class BooksBanglaActivity extends AppCompatActivity {
         listView.setAdapter(adapter);
         listView.setOnItemClickListener((parent, view, position, id) -> {
             Intent intent = new Intent(BooksBanglaActivity.this, WebViewActivity.class);
-            intent.putExtra(WebViewActivity.PDF_NAME_KEY, names[position]);
-            intent.putExtra(WebViewActivity.DRIVE_LINK_URL_KEY, links[position]);
+            intent.putExtra(WebViewActivity.NAME_KEY, names[position]);
+            intent.putExtra(WebViewActivity.LINK_KEY, links[position]);
             startActivity(intent);
         });
     }

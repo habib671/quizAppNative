@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".admissionQuestins.AllAdmissionActivity">
+
+    <include
+        android:id="@+id/admi_all_toolbar"
+        layout="@layout/toolbar_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/ListLayoutStyle"
+                android:onClick="openAdmissionMedical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/medical_logo" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/uni_mediacl" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/ListLayoutStyle"
+                android:onClick="openAdmissionBUET">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/buet_logo" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/uni_buet" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/ListLayoutStyle"
+                android:onClick="openAdmissionBUTEX">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/butex_logo" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/uni_butex" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/ListLayoutStyle"
+                android:onClick="openAdmissionChittagong">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/chittagong_university_logo" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/uni_chitt" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/ListLayoutStyle"
+                android:onClick="openAdmissionComilla">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/comilla_university_logo" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/uni_comilla" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/ListLayoutStyle"
+                android:onClick="openAdmissionCUET">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/cuet_logo" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/uni_cuet" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/ListLayoutStyle"
+                android:onClick="openAdmissionDU">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/dhaka_univ_logo" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/uni_dhaka" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/ListLayoutStyle"
+                android:onClick="openAdmissionJahangirnagar">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/jahangirnagar_university" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/uni_jahangir" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/ListLayoutStyle"
+                android:onClick="openAdmissionJagannath">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/jagannath_logo" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/uni_jagannath" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/ListLayoutStyle"
+                android:onClick="openAdmissionKaziNazrul">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/kazi_nazrul_univ_logo" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/uni_kazi_nazrul" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/ListLayoutStyle"
+                android:onClick="openAdmissionKhulnaUni">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/khulna_univ" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/uni_khulna" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/ListLayoutStyle"
+                android:onClick="openAdmissionKUET">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/kuet_logo" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/uni_kuet" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/ListLayoutStyle"
+                android:onClick="openAdmissionNoakhali">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/noakhali_univ" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/uni_noakhali" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/ListLayoutStyle"
+                android:onClick="openAdmissionRajshahi">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/rajshahi_univ_logo" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/uni_rajshahi" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/ListLayoutStyle"
+                android:onClick="openAdmissionRUET">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/ruet_monogram" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/uni_ruet" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/ListLayoutStyle"
+                android:onClick="openAdmissionSUST">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ListImageStyle"
+                    android:src="@drawable/sust_logo" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/ListTextStyle"
+                    android:text="@string/uni_sust" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

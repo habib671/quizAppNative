@@ -12,7 +12,7 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_margin="16dp"
-        android:indeterminateTint="?attr/colorPrimary"
+        android:indeterminateTint="?android:attr/textColorPrimaryNoDisable"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -21,7 +21,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginVertical="16dp"
         android:layout_marginEnd="16dp"
         android:text="@string/loading"
         app:layout_constraintBottom_toBottomOf="parent"

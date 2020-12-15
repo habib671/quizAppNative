@@ -81,9 +81,10 @@ public class SSCMainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void openSSCEnglish2nd(View view) {
+    }
+
     public void openSSCFinanceBanking(View view) {
-        //Intent intent = new Intent(SSCMainActivity.this, SSCEnglish2ndActivity.class);
-        //startActivity(intent);
     }
 
     public void openSSCGeography(View view) {
@@ -92,7 +93,7 @@ public class SSCMainActivity extends AppCompatActivity {
     public void openSSCHigherMath(View view) {
     }
 
-    public void openSSCgMath(View view) {
+    public void openSSCGeneralMath(View view) {
     }
 
     public void openSSCPhysics(View view) {
@@ -104,10 +105,10 @@ public class SSCMainActivity extends AppCompatActivity {
     public void openSSCIslam(View view) {
     }
 
-    public void openSSCgScience(View view) {
+    public void openSSCScience(View view) {
     }
 
-    public void openSSCict(View view) {
+    public void openSSC_ICT(View view) {
     }
 
     public void openSSCHindu(View view) {

@@ -29,31 +29,29 @@ public class BooksBDStudyActivity extends AppCompatActivity {
     };
 
     private final String[] names = {
-           "Bangla Andoloner Itihas",
-           "Karagarer Rojnamocha Note-2",
-           "3000 Question on Bangladesh Affairs",
-           "MP3 Bangladesh Affairs",
-           "Bongobondhu Short-Note",
+            "Bangla Andoloner Itihas",
+            "Karagarer Rojnamocha Note-2",
+            "3000 Question on Bangladesh Affairs",
+            "MP3 Bangladesh Affairs",
+            "Bongobondhu Short-Note",
             "Bongobondhu All Details",
-           "Karagarer Rojnamocha Note-2",
-           "17 Ti Songbidhan",
-           "Written Mania",
-           "Professors BCS Bangladesh",
-
+            "Karagarer Rojnamocha Note-2",
+            "17 Ti Songbidhan",
+            "Written Mania",
+            "Professors BCS Bangladesh",
     };
 
     private final int[] image = {
-
-            R.drawable.flat,
-            R.drawable.flat,
-            R.drawable.flat,
-            R.drawable.flat,
-            R.drawable.flat,
-            R.drawable.flat,
-            R.drawable.flat,
-            R.drawable.flat,
-            R.drawable.flat,
-            R.drawable.flat,
+            R.drawable.bd,
+            R.drawable.bd,
+            R.drawable.bd,
+            R.drawable.bd,
+            R.drawable.bd,
+            R.drawable.bd,
+            R.drawable.bd,
+            R.drawable.bd,
+            R.drawable.bd,
+            R.drawable.bd,
     };
 
     @Override
@@ -74,8 +72,8 @@ public class BooksBDStudyActivity extends AppCompatActivity {
         listView.setAdapter(adapter);
         listView.setOnItemClickListener((parent, view, position, id) -> {
             Intent intent = new Intent(BooksBDStudyActivity.this, WebViewActivity.class);
-            intent.putExtra(WebViewActivity.PDF_NAME_KEY, names[position]);
-            intent.putExtra(WebViewActivity.DRIVE_LINK_URL_KEY, links[position]);
+            intent.putExtra(WebViewActivity.NAME_KEY, names[position]);
+            intent.putExtra(WebViewActivity.LINK_KEY, links[position]);
             startActivity(intent);
         });
     }

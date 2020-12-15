@@ -10,36 +10,90 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="false"
-        android:theme="@style/AppThemeDarkPink">
+        android:theme="@style/AppTheme">
         <activity
-            android:name=".jobQuestions.BankUttaraActivity"
-            android:parentActivityName=".jobQuestions.AllBankJobsActivity" />
+            android:name=".admissionQuestins.AdmissionSUSTActivity"
+            android:parentActivityName=".admissionQuestins.AllAdmissionActivity" />
         <activity
-            android:name=".jobQuestions.BankSonaliActivity"
-            android:parentActivityName=".jobQuestions.AllBankJobsActivity" />
+            android:name=".admissionQuestins.AdmissionRUETActivity"
+            android:parentActivityName=".admissionQuestins.AllAdmissionActivity" />
         <activity
-            android:name=".jobQuestions.BankRupaliActivity"
-            android:parentActivityName=".jobQuestions.AllBankJobsActivity" />
+            android:name=".admissionQuestins.AdmissionRajshahiUniActivity"
+            android:parentActivityName=".admissionQuestins.AllAdmissionActivity" />
         <activity
-            android:name=".jobQuestions.BankPKBActivity"
-            android:parentActivityName=".jobQuestions.AllBankJobsActivity" />
+            android:name=".admissionQuestins.AdmissionNoakhaliActivity"
+            android:parentActivityName=".admissionQuestins.AllAdmissionActivity" />
         <activity
-            android:name=".jobQuestions.BanksMixedActivity"
-            android:parentActivityName=".jobQuestions.AllBankJobsActivity" />
+            android:name=".admissionQuestins.AdmissionKUETActivity"
+            android:parentActivityName=".admissionQuestins.AllAdmissionActivity" />
         <activity
-            android:name=".jobQuestions.BankJanataActivity"
-            android:parentActivityName=".jobQuestions.AllBankJobsActivity" />
+            android:name=".admissionQuestins.AdmissionKhulnaUniActivity"
+            android:parentActivityName=".admissionQuestins.AllAdmissionActivity" />
         <activity
-            android:name=".jobQuestions.BanksCombinedActivity"
-            android:parentActivityName=".jobQuestions.AllBankJobsActivity" />
+            android:name=".admissionQuestins.AdmissionKaziNazrulActivity"
+            android:parentActivityName=".admissionQuestins.AllAdmissionActivity" />
         <activity
-            android:name=".jobQuestions.BankBangladeshActivity"
-            android:parentActivityName=".jobQuestions.AllBankJobsActivity" />
+            android:name=".admissionQuestins.AdmissionJagannathActivity"
+            android:parentActivityName=".admissionQuestins.AllAdmissionActivity" />
         <activity
-            android:name=".jobQuestions.BankAgraniActivity"
-            android:parentActivityName=".jobQuestions.AllBankJobsActivity" />
+            android:name=".admissionQuestins.AdmissionJahangirnagarActivity"
+            android:parentActivityName=".admissionQuestins.AllAdmissionActivity" />
         <activity
-            android:name=".jobQuestions.AllBankJobsActivity"
+            android:name=".admissionQuestins.AdmissionDhakaUniActivity"
+            android:parentActivityName=".admissionQuestins.AllAdmissionActivity" />
+        <activity
+            android:name=".admissionQuestins.AdmissionCUETActivity"
+            android:parentActivityName=".admissionQuestins.AllAdmissionActivity" />
+        <activity
+            android:name=".admissionQuestins.AdmissionComillaUniActivity"
+            android:parentActivityName=".admissionQuestins.AllAdmissionActivity" />
+        <activity
+            android:name=".admissionQuestins.AdmissionChittagongUniActivity"
+            android:parentActivityName=".admissionQuestins.AllAdmissionActivity" />
+        <activity
+            android:name=".admissionQuestins.AdmissionBUTEXActivity"
+            android:parentActivityName=".admissionQuestins.AllAdmissionActivity" />
+        <activity
+            android:name=".admissionQuestins.AdmissionBUETActivity"
+            android:parentActivityName=".admissionQuestins.AllAdmissionActivity" />
+        <activity
+            android:name=".admissionQuestins.AdmissionMedicalActivity"
+            android:parentActivityName=".admissionQuestins.AllAdmissionActivity" />
+        <activity
+            android:name=".jobAllQuestions.JobBCSActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".admissionQuestins.AllAdmissionActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".jobBankQuestions.BankUttaraActivity"
+            android:parentActivityName=".jobBankQuestions.AllBankJobsActivity" />
+        <activity
+            android:name=".jobBankQuestions.BankSonaliActivity"
+            android:parentActivityName=".jobBankQuestions.AllBankJobsActivity" />
+        <activity
+            android:name=".jobBankQuestions.BankRupaliActivity"
+            android:parentActivityName=".jobBankQuestions.AllBankJobsActivity" />
+        <activity
+            android:name=".jobBankQuestions.BankPKBActivity"
+            android:parentActivityName=".jobBankQuestions.AllBankJobsActivity" />
+        <activity
+            android:name=".jobBankQuestions.BanksMixedActivity"
+            android:parentActivityName=".jobBankQuestions.AllBankJobsActivity" />
+        <activity
+            android:name=".jobBankQuestions.BankJanataActivity"
+            android:parentActivityName=".jobBankQuestions.AllBankJobsActivity" />
+        <activity
+            android:name=".jobBankQuestions.BanksCombinedActivity"
+            android:parentActivityName=".jobBankQuestions.AllBankJobsActivity" />
+        <activity
+            android:name=".jobBankQuestions.BankBangladeshActivity"
+            android:parentActivityName=".jobBankQuestions.AllBankJobsActivity" />
+        <activity
+            android:name=".jobBankQuestions.BankAgraniActivity"
+            android:parentActivityName=".jobBankQuestions.AllBankJobsActivity" />
+        <activity
+            android:name=".jobBankQuestions.AllBankJobsActivity"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".sscQuestions.SSCEnglish1stActivity"
@@ -110,9 +164,7 @@
         <activity
             android:name=".SearchActivity"
             android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".WebViewActivity"
-            android:parentActivityName=".MainActivity" />
+        <activity android:name=".WebViewActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

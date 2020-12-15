@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".jobQuestions.BankBangladeshActivity">
+    tools:context=".jobBankQuestions.BankBangladeshActivity">
 
     <include
         android:id="@+id/bank_bd_toolbar"
