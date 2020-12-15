@@ -16,15 +16,39 @@ import java.util.Objects;
 public class BankSonaliActivity extends AppCompatActivity {
 
     private final String[] links = {
-            "https://google.com",
+            "https://drive.google.com/file/d/1qGKvgDjvAI8MfngK8qxuTZrdW19V7cHW/view?usp=sharing",
+            "https://drive.google.com/file/d/1wOS0YfZVRDxgmXHxQ6VXVpZuynND7nqE/view?usp=sharing",
+            "https://drive.google.com/file/d/1kvKVUj__mMiiBtSU30aJqwCtlcO7hvl3/view?usp=sharing",
+            "https://drive.google.com/file/d/1-agtITv_6p8zxj4-gY4kcu_kmLupWpTC/view?usp=sharing",
+            "https://drive.google.com/file/d/1Liyc7WDYx1xBFrZzfnN48epYsk0LuHAR/view?usp=sharing",
+            "https://drive.google.com/file/d/1flAVRoisKiFAMauHA2a_dBLi0PvjSOaw/view?usp=sharing",
+            "https://drive.google.com/file/d/1eSUQTITASQfO4ApXK2PWm-3S5A06RAPg/view?usp=sharing",
+            "https://drive.google.com/file/d/1p6I4eqkUxtLh-XlqQSB8G93Xhhgcj2S4/view?usp=sharing",
+            "https://drive.google.com/file/d/1VsKjvQ2FxwYp8Aaia5Gf39dKqfFjYYu0/view?usp=sharing",
     };
 
     private final String[] names = {
-            "Int Aff",
+            "SBL Officer 2013",
+            "SBL Officer-Cash 2010",
+            "SBL Cash 2018",
+            "SBL SO 2013",
+            "SBL SO 2010",
+            "SBL Officer-Cash 2014",
+            "SBL IT 2018",
+            "SBL SO 2018",
+            "SBL TAO 2018",
     };
 
     private final int[] image = {
-            R.drawable.ssc_exam,
+            R.drawable.sonali_bank,
+            R.drawable.sonali_bank,
+            R.drawable.sonali_bank,
+            R.drawable.sonali_bank,
+            R.drawable.sonali_bank,
+            R.drawable.sonali_bank,
+            R.drawable.sonali_bank,
+            R.drawable.sonali_bank,
+            R.drawable.sonali_bank,
     };
 
     @Override

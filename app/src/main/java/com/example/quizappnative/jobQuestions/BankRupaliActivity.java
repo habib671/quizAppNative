@@ -16,15 +16,24 @@ import java.util.Objects;
 public class BankRupaliActivity extends AppCompatActivity {
 
     private final String[] links = {
-            "https://google.com",
+            "https://drive.google.com/file/d/1mhtpGtWjsHJxtGyPKOuVbyPaEiGSovmK/view?usp=sharing",
+            "https://drive.google.com/file/d/1JRsRuWngI2LTd_ekyLCJU3f5gn2axPia/view?usp=sharing",
+            "https://drive.google.com/file/d/10KafqgOpWpLnG1qpgAY9-K76_FAOq82q/view?usp=sharing",
+            "https://drive.google.com/file/d/1c98FlkOCsb9bF3xhqEEyWhTVOKhzo_SN/view?usp=sharing",
     };
 
     private final String[] names = {
-            "Int Aff",
+            "Rupali Bank 2019",
+            "Rupali Bank Cash 2018",
+            "Rupali Bank SO 2019",
+            "Rupali Bank 2019",
     };
 
     private final int[] image = {
-            R.drawable.ssc_exam,
+            R.drawable.rupali_bank,
+            R.drawable.rupali_bank,
+            R.drawable.rupali_bank,
+            R.drawable.rupali_bank,
     };
 
     @Override

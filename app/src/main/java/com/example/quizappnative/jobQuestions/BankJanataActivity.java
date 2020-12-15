@@ -16,15 +16,21 @@ import java.util.Objects;
 public class BankJanataActivity extends AppCompatActivity {
 
     private final String[] links = {
-            "https://google.com",
+            "https://drive.google.com/file/d/1JuDS-CqCW8L-hCX7_HmX2NVFwEb_v0kH/view?usp=sharing",
+            "https://drive.google.com/file/d/1sAouKzdVp4EDgDEKdwGTI_V4GE2EcFV4/view?usp=sharing",
+            "https://drive.google.com/file/d/19WIF3OY5EZjt5aWeUpepvH4ejZu3B4oy/view?usp=sharing",
     };
 
     private final String[] names = {
-            "Int Aff",
+            "Janata Bank AEO Teller 2020",
+            "Janata Bank 2018",
+            "Janata Bank AEO 2019",
     };
 
     private final int[] image = {
-            R.drawable.ssc_exam,
+            R.drawable.janata_bank,
+            R.drawable.janata_bank,
+            R.drawable.janata_bank,
     };
 
     @Override

@@ -16,15 +16,21 @@ import java.util.Objects;
 public class BankUttaraActivity extends AppCompatActivity {
 
     private final String[] links = {
-            "https://google.com",
+            "https://drive.google.com/file/d/1mBcv8ecYgvW241X3ghGbsJGWtZdc-Rju/view?usp=sharing",
+            "https://drive.google.com/file/d/1sNI_xLRgBKtTAeyxBti4rU-V7xDoX5hM/view?usp=sharing",
+            "https://drive.google.com/file/d/1CtbYYQqu-fTZHEmKXcHqwMlajiexLyyg/view?usp=sharing",
     };
 
     private final String[] names = {
-            "Int Aff",
+            "Uttara Bank 2017",
+            "Uttara Bank AO-Cash 2017",
+            "Uttara Bank PBO 2017",
     };
 
     private final int[] image = {
-            R.drawable.ssc_exam,
+            R.drawable.uattara_bank,
+            R.drawable.uattara_bank,
+            R.drawable.uattara_bank,
     };
 
 

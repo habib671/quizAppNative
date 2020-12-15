@@ -17,15 +17,24 @@ import java.util.Objects;
 public class BankAgraniActivity extends AppCompatActivity {
 
     private final String[] links = {
-            "https://google.com",
+            "https://drive.google.com/file/d/1aOu-LqZ4qlD89shHW4LqGKKIrk8BXQBj/view?usp=sharing",
+            "https://drive.google.com/file/d/1rQvtc5EvhAOXhret0zrT1mCqM4DaNUOK/view?usp=sharing",
+            "https://drive.google.com/file/d/1YltaBCQdOLV4VUKxZ9r3MYPR381yoWIw/view?usp=sharing",
+            "https://drive.google.com/file/d/1JFY1HqdI0_0OllnpTgzW_7o1WPybgb4B/view?usp=sharing",
     };
 
     private final String[] names = {
-            "Int Aff",
+            "Agrani Bank 2017",
+            "Agrani Bank Cash 2017",
+            "Agrani Bank SO 2015",
+            "Agrani Bank SO 2017 SOlve",
     };
 
     private final int[] image = {
-            R.drawable.ssc_exam,
+            R.drawable.agrani_bank,
+            R.drawable.agrani_bank,
+            R.drawable.agrani_bank,
+            R.drawable.agrani_bank,
     };
 
     @Override

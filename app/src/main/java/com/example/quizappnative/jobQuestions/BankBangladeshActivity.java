@@ -16,15 +16,27 @@ import java.util.Objects;
 public class BankBangladeshActivity extends AppCompatActivity {
 
     private final String[] links = {
-            "https://google.com",
+            "https://drive.google.com/file/d/1RPglFIueSujFUGIjsXETmddm64l3tjZO/view?usp=sharing",
+            "https://drive.google.com/file/d/10BGAqw93Xj-sLERH3UWA3lD9Mu58eYEG/view?usp=sharing",
+            "https://drive.google.com/file/d/1-UmPXyAl5fn6k9k5NG4zAbsPGJfECPFD/view?usp=sharing",
+            "https://drive.google.com/file/d/1ljaE6YG7r6H4EIHsBGJP-PDj7u8P9gr-/view?usp=sharing",
+            "https://drive.google.com/file/d/12xs9bNmbGty1jBLD7Wrzq1mvwY18RAsl/view?usp=sharing",
     };
 
     private final String[] names = {
-            "Int Aff",
+            "Bangladesh Bank 2018 Solve",
+            "Bangladesh Bank 2001-2015",
+            "Bangladesh Bank 2001-2019",
+            "Bangladesh Bank 2016",
+            "Bangladesh Bank 2017",
     };
 
     private final int[] image = {
-            R.drawable.ssc_exam,
+            R.drawable.bangladesh_bank,
+            R.drawable.bangladesh_bank,
+            R.drawable.bangladesh_bank,
+            R.drawable.bangladesh_bank,
+            R.drawable.bangladesh_bank,
     };
 
     @Override
