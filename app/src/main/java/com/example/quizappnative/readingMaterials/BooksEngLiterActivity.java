@@ -16,24 +16,32 @@ import java.util.Objects;
 public class BooksEngLiterActivity extends AppCompatActivity {
 
     private final String[] links = {
-            "https://google.com",
-            "https://drive.google.com/file/d/1n-_Y9sB7rKmZ4ozRxzXQyJbnew_ToLhS/view?usp=sharing",
-            "https://drive.google.com/file/d/1N81N3cqczOAKbRqIIM_5Mi_dVEh1WCw5/view?usp=sharing",
-            "https://drive.google.com/file/d/1HCzjYJWEvyOlqGaeLeI3p_-mLI_T4MXh/view?usp=sharing"
+           "https://drive.google.com/file/d/1Q4DEt-ISfCDbZvW5qemO71Og5etY5Iec/view?usp=sharing",
+           "https://drive.google.com/file/d/1zjcV5OC18OKytH8ZK-NEKgxMxznMwrDO/view?usp=sharing",
+           "https://drive.google.com/file/d/1WA7k2WIoyLk57ncPU_J3aKRBGlEVu6zd/view?usp=sharing",
+           "https://drive.google.com/file/d/1NL-NQF0MLQfzBu6QHKAT1c-iVoXxB_iL/view?usp=sharing",
+           "https://drive.google.com/file/d/1LogmbHO2RPnUwCmNLYcWxQ3DjkTeWPUE/view?usp=sharing",
+           "https://drive.google.com/file/d/1rBPPqbkOgbeTmSJ-9Mqxkd3j89RlEq50/view?usp=sharing",
     };
 
     private final String[] names = {
-            "Google.com",
-            "11 Poets",
-            "Bangla Cyclone",
-            "Bangla Shahitto"
+            "English Literature Period Hand Note",
+            "English Literature Short Note",
+            "A Hand Note on English Literature",
+            "Oracle English Literature",
+            "A Compilation of Last 18 years Eng.Literature Ques",
+            "MCQ English Literature-Maneesh Rastogi"
+
+
     };
 
     private final int[] image = {
-            R.drawable.logo,
             R.drawable.flat,
             R.drawable.flat,
-            R.drawable.flat
+            R.drawable.flat,
+            R.drawable.flat,
+            R.drawable.flat,
+            R.drawable.flat,
     };
 
     @Override

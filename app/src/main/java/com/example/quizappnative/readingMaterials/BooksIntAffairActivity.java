@@ -16,16 +16,19 @@ import java.util.Objects;
 public class BooksIntAffairActivity extends AppCompatActivity {
 
     private final String[] links = {
-            "https://google.com",
-            "https://google.com",
+           "https://drive.google.com/file/d/1EX2he276axNYBOW-eFPtO3tHyLSSZ5sH/view?usp=sharing",
+           "https://drive.google.com/file/d/1QOoW6Lmm-Boiv1eFx5-8upxvEYtr4B6w/view?usp=sharing",
+           "https://drive.google.com/file/d/1J0VNxb59YLM1yzVXkYvFpsMUl6lk-pVL/view?usp=sharing",
     };
 
     private final String[] names = {
-            "Int Aff",
-            "Int Aff",
+            "35 BCS Professor International Affairs",
+            "MP3 International Affairs",
+            "Oracle International Affairs",
     };
 
     private final int[] image = {
+            R.drawable.flat,
             R.drawable.flat,
             R.drawable.flat,
     };

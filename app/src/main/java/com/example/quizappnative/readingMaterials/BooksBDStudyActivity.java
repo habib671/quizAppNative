@@ -16,24 +16,44 @@ import java.util.Objects;
 public class BooksBDStudyActivity extends AppCompatActivity {
 
     private final String[] links = {
-            "https://google.com",
-            "https://drive.google.com/file/d/1n-_Y9sB7rKmZ4ozRxzXQyJbnew_ToLhS/view?usp=sharing",
-            "https://drive.google.com/file/d/1N81N3cqczOAKbRqIIM_5Mi_dVEh1WCw5/view?usp=sharing",
-            "https://drive.google.com/file/d/1HCzjYJWEvyOlqGaeLeI3p_-mLI_T4MXh/view?usp=sharing"
+            "https://drive.google.com/file/d/1gwpwdQ1Oyya-iOdkkGrMqwbn41zT3cwi/view?usp=sharing",
+            "https://drive.google.com/file/d/1yYXmf1Ouk9Abrm3Uvevq6yrUcOUkOpKX/view?usp=sharing",
+            "https://drive.google.com/file/d/1M52Mge07fd_AS9MWhE-uN83AdK5F5YYf/view?usp=sharing",
+            "https://drive.google.com/file/d/14VbNwJFPvf9wYoijRf1PtpOKSEhjWiM2/view?usp=sharing",
+            "https://drive.google.com/file/d/16ansWPmjYvpd06m8dWubhahgek8ameLt/view?usp=sharing",
+            "https://drive.google.com/file/d/1UkIRbn5A2gntD3MCkpL8Ljgg1iHLCpX-/view?usp=sharing",
+            "https://drive.google.com/file/d/1jGuC98gAmrnr4G3kVR_9BRBJCBFUlOIA/view?usp=sharing",
+            "https://drive.google.com/file/d/1ucJsIsF4USbEOl3t0G3S5h-42_ZOX8uV/view?usp=sharing",
+            "https://drive.google.com/file/d/1qu0HIVo45QACyJKA4oN1tEx_DTrGt91E/view?usp=sharing",
+            "https://drive.google.com/file/d/1pfMfuv5XM0KeQEenwWZJv9EFwCne65VC/view?usp=sharing",
     };
 
     private final String[] names = {
-            "Google.com",
-            "11 Poets",
-            "Bangla Cyclone",
-            "Bangla Shahitto"
+           "Bangla Andoloner Itihas",
+           "Karagarer Rojnamocha Note-2",
+           "3000 Question on Bangladesh Affairs",
+           "MP3 Bangladesh Affairs",
+           "Bongobondhu Short-Note",
+            "Bongobondhu All Details",
+           "Karagarer Rojnamocha Note-2",
+           "17 Ti Songbidhan",
+           "Written Mania",
+           "Professors BCS Bangladesh",
+
     };
 
     private final int[] image = {
-            R.drawable.logo,
+
             R.drawable.flat,
             R.drawable.flat,
-            R.drawable.flat
+            R.drawable.flat,
+            R.drawable.flat,
+            R.drawable.flat,
+            R.drawable.flat,
+            R.drawable.flat,
+            R.drawable.flat,
+            R.drawable.flat,
+            R.drawable.flat,
     };
 
     @Override
