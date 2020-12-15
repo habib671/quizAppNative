@@ -50,8 +50,10 @@ public class WebViewActivity extends AppCompatActivity {
             public void onProgressChanged(WebView view, int newProgress) {
                 super.onProgressChanged(view, newProgress);
                 progressBar.setProgress(newProgress);
-                if (newProgress >= 100) {
+                if (newProgress == 100) {
                     progressBar.setVisibility(View.GONE);
+                } else {
+                    progressBar.setVisibility(View.VISIBLE);
                 }
             }
         });
